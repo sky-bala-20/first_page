@@ -1,0 +1,51 @@
+*{
+    margin: 2px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    
+}
+
+h1{
+    align-self: baseline;
+    color: rgb(4, 17, 2);
+    padding: 5px 7px;
+    margin: 10px;
+    font-size: 65px;
+    font-weight: 900;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    background-image: url(https://w0.peakpx.com/wallpaper/622/358/HD-wallpaper-pink-yellow-orange-gradient-colors-background-ultra-aero-colorful-orange-purple-yellow-abstract-pink-background-gradient-blending.jpg);
+    background-size: cover;
+}
+.myform{
+    display: flexbox;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 1px;
+    /* border: 1px solid black; */
+    border-width: 20%;
+    background-image: url(https://th.bing.com/th/id/R.2f33eccb016699f0575049cc457c6385?rik=jQFI7PQy2UVY9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMQy6rhu.jpg&ehk=KzK%2fyg3TTOHhej%2f9yu%2b8pJrL9%2fKSIfdTULPLUQ%2fiB6o%3d&risl=&pid=ImgRaw&r=0);
+}
+
+input{
+    /* padding: 6px 15px; */
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+}
+.login{
+    color: beige;
+    background-color: black;
+}
+.singin{
+    color: azure;
+    background-color: black;
+}

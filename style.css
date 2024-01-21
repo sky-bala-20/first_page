@@ -29,7 +29,7 @@ body{
 .navbar h1{
     cursor: pointer;
     position: relative;
-    right: 18%;
+    right: 15%;
     color: rgb(3, 56, 56); 
     /* text-shadow:0 5px rgb(1, 10, 10); */
 }

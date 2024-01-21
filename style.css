@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgb(87, 226, 87), rgb(2, 51, 18));
+}
+.navbar{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    /* background: linear-gradient(to right, rgb(70, 219, 70), rgb(2, 51, 18)); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.315);
+}
+.logo{
+    width: 100%;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.navbar h1{
+    cursor: pointer;
+    position: relative;
+    right: 18%;
+    color: rgb(3, 56, 56); 
+    /* text-shadow:0 5px rgb(1, 10, 10); */
+}
+.sublogo{
+    width: auto;
+}
+.options{
+    display: flex;
+    gap: 40px;
+
+}
+.logo{
+    width: 40px;
+    display: flex;
+    align-items: self-start;
+
+
+}
+button{
+    transition: 0.3s;
+}
+.p{
+    color: rgb(251, 238, 238);
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+.section{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    padding: 8% 5%;
+    gap: 50px;
+    /* background: linear-gradient(to right, rgb(70, 219, 70), rgb(2, 51, 18)); */
+}
+.sec1{
+    padding-top: calc(10vh + 8%);
+}
+.text{
+    width: 60%;
+    font-style:italic ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.text h2{
+    color: rgb(3, 56, 56);
+}
+.text p{
+    text-align: justify;
+}
+.image{
+    width: 40%;
+    display: flex;
+    align-items:end;
+}
+.image img{
+    height: auto;
+    width: 90%;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+.image img:hover{
+    width: 100%;
+    border-radius: 0;
+}
+.text button{
+    background-color: rgb(171, 197, 25);
+    color: rgb(4, 46, 42);
+    border: none;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.p::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(1, 1, 36);
+    transform:  scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+
+}
+.p::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    background-color: rgb(1, 1, 36);
+    position: absolute;
+    transform:  scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+
+}
+.p:hover{
+    color:  chocolate;
+}
+.p:hover::before{
+    transform:  scaleX(1);
+}
+.p:hover::after{
+    transform:  scaleX(1);
+}
+button:active{
+    color: rgb(151, 3, 3);
+    background-color: chocolate;
+}
+.contact {
+    gap: 10px;
+    position:absolute;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid black; */
+}
+.contact form{
+    gap: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.contact h3{
+    color: rgba(217, 255, 4, 0.712);
+}
+.contact form input{
+    background-color: aquamarine;
+    height: 50px;
+    border-radius: 12px;
+}
+.contact form button{
+    background: linear-gradient(gray, skyblue);
+    width: 40%;
+    transition: 0.5s;
+    height: 30px;
+}
+.contact form button:active{
+    background-color: bisque;
+    width: 30%;
+}
+.info{
+    width: 40%;
+    text-align: center;
+    color: rgb(23, 5, 122);
+    position: relative;
+    left: 40px;
+    top: 100px;
+    font-size: medium;
+}

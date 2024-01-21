@@ -120,7 +120,7 @@ button{
     display: flex;
     position: absolute;
     bottom: 0;
-    background-color: rgb(1, 1, 36);
+    background-color: chocolate;
     transform:  scaleX(0);
     transform-origin: left;
     transition: 0.5s;
@@ -132,7 +132,7 @@ button{
     width: 100%;
     display: flex;
     bottom: 0;
-    background-color: rgb(1, 1, 36);
+    background-color: chocolate;
     position: absolute;
     transform:  scaleX(0);
     transform-origin: right;

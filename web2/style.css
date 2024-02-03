@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgb(24, 190, 24), rgb(2, 51, 18));
+}
+.navbar{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(24, 190, 24), rgb(2, 51, 18));
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.466);
+}
+.logo{
+    width: max-content;
+    display: flex;
+    gap: 15px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.navbar h1{
+    cursor: pointer;
+    position: relative;
+    color: rgb(3, 56, 56); 
+    /* text-shadow:5px -5px 10px rgb(1, 14, 4); */
+}
+.sublogo{
+    width: auto;
+}
+.options{
+    display: flex;
+    gap: 40px;
+
+}
+button{
+    transition: 0.3s;
+}
+.p{
+    color: rgb(251, 238, 238);
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+.section{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    padding: 8% 5%;
+    gap: 50px;
+    /* background: linear-gradient(to right, rgb(70, 219, 70), rgb(2, 51, 18)); */
+}
+.sec1{
+    padding-top: calc(10vh + 8%);
+}
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.text h2{
+    color: rgb(3, 56, 56);
+    font-size: 40px;
+}
+.text p{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.326);
+}
+.image,.insert{
+    width: 50%;
+    display: flex;
+    align-items:center;
+}
+.image img{
+    height: auto;
+    width: 100%;
+    transition: 0.4s;
+    border-radius: 10%;
+    transform: scale(0.9);
+}
+.image img:hover{
+    transform: scale(1);
+    border-radius: 20px;
+}
+.text button{
+    background-color: rgb(17, 107, 186);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: max-content;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.p::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: chocolate;
+    transform:  scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+
+}
+.p::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    background-color: chocolate;
+    position: absolute;
+    transform:  scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+
+}
+.p:hover{
+    color:  chocolate;
+}
+.p:hover::before{
+    transform:  scaleX(1);
+}
+.p:hover::after{
+    transform:  scaleX(1);
+}
+button:active{
+    color: rgb(151, 3, 3);
+    background-color: chocolate;
+}
+.contact form{
+    gap: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.contact h3{
+    color: rgba(217, 255, 4, 0.712);
+}
+.contact form input{
+    background-color: rgb(47, 183, 138);
+}
+.contact form button{
+    background: linear-gradient(gray, skyblue);
+    transition: 0.5s;
+    transform: scaleX(1);
+}
+.contact form button:active{
+    background: linear-gradient(gray, skyblue);
+    transition: 0.5s;
+    transform: scaleX(0.9);
+}
+
+.contactform{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items:; */
+}
+.p2{
+    width: 50%;
+    text-align: right;
+    color: rgb(239, 237, 245);
+    font-size: 20px;
+
+}
+.insert{
+    width: 50%;
+}
+.insert img{
+    width: 100%;
+    border-radius: 50px;
+}
+.contact{
+    width: 50%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+}
+.contact h3{
+    font-size: 30px;
+}
+.contact form input{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 17px;
+    background-color: white;
+}
+.contact form input::placeholder{
+    color: brown;
+}
+.contact form button{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 17px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.info
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.p2,.contact{
+    width: 100%;
+    /* align-items: center; */
+}
+
+@media screen and (max-width:1250px) {
+    .options{
+        display: none;
+    }
+}
+@media screen and (max-width:1130px) {
+    .section{
+        flex-direction: column !important;
+    }
+    .image, .text, .insert, .info{
+        width: 100%;
+    }
+    .contact{
+        align-items: center;
+    }
+    .p2 p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:450px) {
+    .contact form{
+        width: 100%;
+    }
+    .contact h3{
+        text-align: center;
+    }
+    .p2 p{
+        text-align: left;
+    }
+    .navbar h1{
+        font-size: 25px;
+        color: white;
+    }
+    .text button{
+        width: 100%;
+    }
+}

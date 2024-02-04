@@ -75,7 +75,7 @@ section h1{
     background-color: white;
     font-weight: bold;
     font-size: medium;
-    border-radius: 30%;
+    border-radius: 30px;
     transition: .4s;
     scale: .9;
     align-items: center;
@@ -120,7 +120,7 @@ footer hr{
         font-size: 2vh
     }   
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     footer{
         font-size: 3vh;
         font-weight: 700;

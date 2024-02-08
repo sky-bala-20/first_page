@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Riot', sans-serif;
+}
+body{
+    background-image:url('https://getwallpapers.com/wallpaper/full/8/0/1/168662.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+nav h1{
+    color: orangered;
+    font-size: 30px;
+    cursor: pointer;
+}
+nav .options{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0 30px;
+    gap: 100px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.icon{
+    display: none !important ;
+}
+.s-icon{
+    display: none !important;
+}
+.search{
+    border: 2px solid orangered;
+    display: flex;
+    border-radius: 5px;
+}
+.search input{
+    background:transparent;
+    border: none;
+    height: 41px;
+    width: 70%;
+    padding: 10px;
+    color: rgb(223, 115, 28);
+}
+.search button{
+    background-color: orangered;
+    height: 41px;
+    width: 30%;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.section{
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    gap: 20px;
+}
+.text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.text button{
+    background-color: orangered;
+    color: white;
+    width: 20%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: wait;
+}
+.l1{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+.l2{
+    color: orangered;
+    font-size: 60px;
+    font-weight: 600;
+}
+.l3{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+.l4{
+    color: white;
+    /* font-size: 8px; */
+    /* font-weight: 100; */
+}
+.login{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 30px 0;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+}
+.login h3{
+    background-color: rgb(247, 247, 134);
+    width: 90%;
+    color: orangered;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+.login input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid orangered;
+    width: 90%;
+    color: white;
+    height: 20px;
+}
+.login button{
+    width: 90%;
+    padding: 8px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login p{
+    color: white;
+} 
+.login a{
+    color: orangered;
+}
+button:active{
+    color: orange;
+    scale: .9;
+}
+@media screen and (max-width:1150px){
+    .options{
+        width: 700px;
+        gap: 50px !important;
+    }
+    .options p{
+        font-size: 12px;
+    }
+    .search{
+        display: none;
+    }
+    .s-icon{
+        display: flex !important;
+        color: white;
+    }
+}
+@media screen and (max-width:800px){
+    .l1,.l2,.l3{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .l4{
+        font-size: 12px;
+    }
+    .login{
+        width: 30%;
+        justify-content: right;
+    }
+    .text button{
+        width: 100px;
+    }
+}
+@media screen and (max-width:650px){
+    .options p{
+        display: none;
+        align-items: end;
+    }
+    .s-icon{
+        display: none !important;
+    }
+    .icon{
+        display: flex !important;
+        color: white;
+    }
+    .text{
+        width: 100%;
+    }
+    .l1,.l2,.l3{
+        font-size: 30px;
+    }
+    .l4{
+        font-size: 10px;
+    }
+    .section{
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center ; */
+    }
+    .login{
+        width: 100%;
+        justify-content: center;
+    }
+    .login form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:350px){
+    .login form{
+        width: 100%;
+    }
+}
